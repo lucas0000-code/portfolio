@@ -9,6 +9,7 @@
 /coverage
 
 # next.js
+.next
 /.next/
 /out/
 
@@ -25,7 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
 .env.local
 .env.development.local
 .env.test.local
@@ -34,16 +34,7 @@ yarn-error.log*
 # vercel
 .vercel
 
-# next-sitemap
-robots.txt
-sitemap.xml
+# changelog
+CHANGELOG.md
 
-# cypress
-cypress/videos
-cypress/screenshots
-
-# rss
-rss.xml
-
-# scripts
-scripts/out
+pnpm-lock.yaml
