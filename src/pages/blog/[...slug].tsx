@@ -32,7 +32,6 @@ import TableOfContents, {
 import CloudinaryImg from '@/components/images/CloudinaryImg';
 import Layout from '@/components/layout/Layout';
 import CustomLink from '@/components/links/CustomLink';
-import ShareTweetButton from '@/components/links/ShareTweetButton';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 import Tooltip from '@/components/Tooltip';
@@ -57,7 +56,6 @@ export default function SingleBlogPage({
 
   //#region  //*=========== Link Constants ===========
   const COMMIT_HISTORY_LINK = `https://github.com/theodorusclarence/theodorusclarence.com/commits/main/src/contents/blog/${frontmatter.slug}.mdx`;
-  const GITHUB_EDIT_LINK = `https://github.com/theodorusclarence/theodorusclarence.com/blob/main/src/contents/blog/${frontmatter.slug}.mdx`;
   const OG_BANNER_LINK = `https://res.cloudinary.com/theodorusclarence/image/upload/f_auto,g_auto,c_fill,ar_4:5,w_1200/theodorusclarence/banner/${frontmatter.banner}`;
   //#endregion  //*======== Link Constants ===========
 
@@ -220,12 +218,6 @@ export default function SingleBlogPage({
               </aside>
             </section>
 
-            <ShareTweetButton
-              className='mt-12'
-              url={`https://theodorusclarence.com/blog/${frontmatter.slug}`}
-              title={frontmatter.title}
-            />
-
             <CarbonAds className='mt-8' />
 
             <figure className='mt-12'>
@@ -251,13 +243,7 @@ export default function SingleBlogPage({
                 </ul>
               </div>
             )}
-
-            <SubscribeCard className='mt-12' title='Enjoying this post?' />
-
             <div className='mt-8 flex flex-col items-start gap-4 md:flex-row-reverse md:justify-between'>
-              <CustomLink href={GITHUB_EDIT_LINK}>
-                Edit this on GitHub
-              </CustomLink>
               <CustomLink href='/blog'>← Back to blog</CustomLink>
             </div>
           </div>

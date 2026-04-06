@@ -71,47 +71,14 @@ export default function AboutPage() {
               <article className='prose mt-2 dark:prose-invert' data-fade='7'>
                 <ul>
                   <li>
-                    I'm a full-stack engineer at{' '}
-                    <CustomLink
-                      onClick={() =>
-                        trackEvent('Now: Dimension', { type: 'link' })
-                      }
-                      href='https://dimension.dev?ref=theodorusclarence.com'
-                    >
-                      Dimension
-                    </CustomLink>{' '}
+                    I'm a full-stack engineer at Dimension
                     while working remotely from Jakarta, Indonesia
                   </li>
                   <li>
-                    I'm a technical writer for{' '}
-                    <CustomLink
-                      onClick={() =>
-                        trackEvent('Now: LogRocket', { type: 'link' })
-                      }
-                      href='https://blog.logrocket.com/author/theodorusclarence/'
-                    >
-                      LogRocket
-                    </CustomLink>
+                    I'm a technical writer for LogRocket
                   </li>
                   <li>
-                    I'm a mentor! I do revision-style mentorship (
-                    <Tooltip
-                      tipChildren={
-                        <p className='italic'>
-                          *Try translating them to english
-                        </p>
-                      }
-                    >
-                      <CustomLink
-                        onClick={() =>
-                          trackEvent('Now: Mentor Thread', { type: 'link' })
-                        }
-                        href='https://x.com/th_clarence/status/1713454750090534948?s=20'
-                      >
-                        thread
-                      </CustomLink>
-                    </Tooltip>
-                    )
+                    I'm a mentor! I do revision-style mentorship (thread)
                   </li>
                 </ul>
               </article>
@@ -135,34 +102,6 @@ export default function AboutPage() {
                 especially frontend works. I’ll be happy to help! (find my email
                 in the footer)
               </p>
-            </article>
-          </div>
-        </section>
-
-        <section id='uses'>
-          <div className='layout mt-16'>
-            <h2>Uses</h2>
-            <CloudinaryImg
-              className='mt-8'
-              publicId='theodorusclarence/about/setup-oct-2024-light-2.jpg'
-              width={1500}
-              height={843}
-              alt='Photo of my desk setup'
-            />
-            <article className='prose mt-4 dark:prose-invert'>
-              <ul>
-                <li>MacBook Pro (14" M3 Pro 2023, 36GB, 1TB)</li>
-                <li>LG UltraFine™ 4K 32 Inch LG (32UN880-B)</li>
-                <li>Keychron K2v2</li>
-                <li>Logitech MX Master 3s</li>
-                <li>Kindle Paperwhite (10th Generation)</li>
-                <li>Nintendo Switch OLED</li>
-                <li>Stramm Bruno Standing Desk 160x80</li>
-                <li>Pexio Jervis Ergonomic Chair</li>
-                <li>Press Play Desk Shelf</li>
-                <li>Mi Computer Monitor Light Bar</li>
-                <li>Creative Pebble V3</li>
-              </ul>
             </article>
           </div>
         </section>

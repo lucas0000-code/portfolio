@@ -163,15 +163,6 @@ export default function IndexPage({
               className='relative z-10 mt-6 flex flex-col items-end gap-4 text-gray-600 dark:text-gray-300 md:flex-row md:items-center md:justify-between'
               data-fade='4'
             >
-              <Button
-                onClick={() => {
-                  setIsEnglish((b) => !b);
-                  clearSearch();
-                }}
-                className='text-sm !font-medium'
-              >
-                Read in {isEnglish ? 'Bahasa Indonesia' : 'English'}
-              </Button>
               <SortListbox
                 selected={sortOrder}
                 setSelected={setSortOrder}

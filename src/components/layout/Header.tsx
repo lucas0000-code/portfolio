@@ -54,9 +54,6 @@ export default function Header({ large = false }: HeaderProps) {
         <Accent>Skip to main content</Accent>
       </a>
 
-      {/* Gradient List */}
-      <div className='h-2 bg-gradient-to-tr from-primary-200 via-primary-300 to-primary-400' />
-
       <div className='bg-white transition-colors dark:bg-dark dark:text-white'>
         <nav
           className={clsx(
@@ -81,7 +78,7 @@ export default function Header({ large = false }: HeaderProps) {
                       'transition-colors',
                       'bg-primary-300/0 group-hover:bg-primary-300/20 dark:group-hover:bg-primary-300/0',
                       href === baseRoute &&
-                        '!bg-primary-300/50 dark:bg-gradient-to-tr dark:from-primary-300 dark:to-primary-400 dark:bg-clip-text dark:text-transparent'
+                      '!bg-primary-300/50 dark:bg-gradient-to-tr dark:from-primary-300 dark:to-primary-400 dark:bg-clip-text dark:text-transparent'
                     )}
                   >
                     {label}
@@ -101,6 +98,5 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
   { href: '/projects', label: 'Projects' },
-  { href: '/shorts', label: 'Shorts' },
   { href: '/about', label: 'About' },
 ];

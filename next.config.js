@@ -1,5 +1,7 @@
 const path = require('path');
 
+require('events').EventEmitter.defaultMaxListeners = 20;
+
 const withRemoteRefresh = require('next-remote-refresh')({
   paths: [path.resolve(__dirname, 'src', 'contents')],
 });
@@ -11,10 +13,15 @@ const nextConfig = {
   eslint: {
     dirs: ['src'],
   },
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.cache = false;
+    }
+    return config;
+  },
   images: {
     domains: [
       'res.cloudinary.com',
-
       // Spotify Album
       'i.scdn.co',
     ],

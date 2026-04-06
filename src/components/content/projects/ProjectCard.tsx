@@ -25,7 +25,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
       )}
     >
       <UnstyledLink
-        href={`/projects/${project.slug}`}
+        href={`/projects`}
         className='flex h-full flex-col items-start rounded-md p-4 focus:outline-none focus-visible:ring focus-visible:ring-primary-300'
       >
         <h4>{project.title}</h4>
@@ -44,10 +44,6 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
           height={792}
           preview={false}
         />
-
-        <p className='animated-underline mt-2 inline-block font-medium'>
-          See more →
-        </p>
       </UnstyledLink>
     </li>
   );
